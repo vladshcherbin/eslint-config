@@ -4,8 +4,18 @@
   "version": "0.0.0",
   "author": "Vlad Shcherbin <vlad.shcherbin@gmail.com>",
   "repository": "vladshcherbin/eslint-config",
-  "dependencies": {},
-  "peerDependencies": {},
+  "dependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/eslint-parser": "^7.13.10",
+    "@babel/eslint-plugin": "^7.13.10",
+    "@babel/plugin-syntax-class-properties": "^7.12.13",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-sort-destructure-keys": "^1.3.5"
+  },
+  "peerDependencies": {
+    "eslint": ">=7"
+  },
   "files": [
     "index.js"
   ],
