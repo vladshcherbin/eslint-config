@@ -1,9 +1,7 @@
-const shared = require('./shared')
-
 module.exports = {
   extends: [
     'airbnb-base',
-    shared
+    './shared'
   ],
   plugins: ['@babel'],
   rules: {
