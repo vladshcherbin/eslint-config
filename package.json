@@ -10,14 +10,18 @@
     "@babel/eslint-plugin": "^7.14.5",
     "@babel/plugin-syntax-class-properties": "^7.12.13",
     "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^16.1.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-sort-destructure-keys": "^1.4.0"
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": ">=5",
+    "@typescript-eslint/parser": ">=5",
     "eslint": ">=8"
   },
   "files": [
     "node.js",
+    "node-typescript.js",
     "shared.js"
   ],
   "license": "MIT"
