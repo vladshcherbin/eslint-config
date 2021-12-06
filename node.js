@@ -5,6 +5,7 @@ module.exports = {
   ],
   plugins: ['@babel'],
   rules: {
+    'comma-dangle': ['error', 'never'],
     'new-cap': 'off',
     'no-invalid-this': 'off',
     'no-unused-expressions': 'off',
