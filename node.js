@@ -1,11 +1,14 @@
 module.exports = {
   extends: [
-    'airbnb-base',
-    './shared'
+    'airbnb-base'
   ],
-  plugins: ['@babel'],
   rules: {
     'comma-dangle': ['error', 'never'],
+    'object-curly-newline': ['error', { multiline: true, consistent: true }],
+    'sort-imports': ['error', { ignoreDeclarationSort: true }],
+    'import/order': ['error', { groups: ['builtin', 'external', 'internal'], alphabetize: { order: 'asc' } }],
+    'sort-destructure-keys/sort-destructure-keys': 'error',
+    // Babel related
     'new-cap': 'off',
     'no-invalid-this': 'off',
     'no-unused-expressions': 'off',
@@ -26,6 +29,10 @@ module.exports = {
     '@babel/object-curly-spacing': ['error', 'always'],
     '@babel/semi': ['error', 'never'],
   },
+  plugins: [
+    '@babel',
+    'sort-destructure-keys'
+  ],
   parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 2020,
