@@ -4,20 +4,20 @@
   "version": "0.4.0",
   "author": "Vlad Shcherbin <vlad.shcherbin@gmail.com>",
   "repository": "vladshcherbin/eslint-config",
+  "main": "src/index.js",
   "dependencies": {
-    "@babel/core": "^7.17.8",
-    "@babel/eslint-parser": "^7.17.0",
-    "@babel/eslint-plugin": "^7.17.7",
-    "@babel/plugin-syntax-class-properties": "^7.12.13",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-sort-destructure-keys": "^1.4.0"
+    "@stylistic/eslint-plugin": "^2.9.0",
+    "globals": "^15.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.13.0"
   },
   "peerDependencies": {
-    "eslint": ">=8"
+    "eslint": ">=9.13.0"
   },
   "files": [
-    "node.js"
+    "src"
   ],
+  "type": "module",
   "license": "MIT"
 }
