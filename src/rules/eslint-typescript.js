@@ -5,8 +5,9 @@ export default {
   languageOptions: {
     parser,
     parserOptions: {
-      projectService: true,
-      tsconfigRootDir: import.meta.dirname
+      projectService: {
+        allowDefaultProject: ['*.js']
+      }
     }
   },
   plugins: {
