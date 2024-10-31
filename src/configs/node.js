@@ -1,9 +1,11 @@
 import globals from 'globals'
 import base from './base.js'
 
-export default {
+export default [
   ...base,
-  languageOptions: {
-    globals: globals.nodeBuiltin
+  {
+    languageOptions: {
+      globals: globals.nodeBuiltin
+    }
   }
-}
+]
