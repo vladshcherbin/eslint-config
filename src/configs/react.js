@@ -3,5 +3,8 @@ import react from '../rules/react.js'
 
 export default [
   ...browser,
-  react
+  react,
+  {
+    'import/extensions': ['.js', '.jsx']
+  }
 ]

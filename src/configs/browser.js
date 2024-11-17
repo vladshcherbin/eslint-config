@@ -9,6 +9,7 @@ export default [
       globals: globals.browser
     },
     rules: {
+      'import/no-nodejs-modules': 'error',
       'no-restricted-globals': ['error', 'isFinite', 'isNaN', ...confusingBrowserGlobals]
     }
   }

@@ -5,7 +5,7 @@ export default {
     import: plugin
   },
   rules: {
-    'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
+    'import/consistent-type-specifier-style': 'off',
     'import/default': 'error',
     'import/dynamic-import-chunkname': 'off',
     'import/export': 'error',
@@ -45,7 +45,7 @@ export default {
     'import/no-named-default': 'error',
     'import/no-named-export': 'off',
     'import/no-namespace': 'error',
-    'import/no-nodejs-modules': 'error',
+    'import/no-nodejs-modules': 'off',
     'import/no-relative-packages': 'error',
     'import/no-relative-parent-imports': 'off',
     'import/no-restricted-paths': 'off',
@@ -55,8 +55,8 @@ export default {
     'import/no-unused-modules': 'off',
     'import/no-useless-path-segments': 'error',
     'import/no-webpack-loader-syntax': 'error',
-    'import/order': ['error', { groups: [['builtin', 'external', 'internal']] }],
-    'import/prefer-default-export': 'error',
+    'import/order': ['error', { 'newlines-between': 'never' }],
+    'import/prefer-default-export': 'off',
     'import/unambiguous': 'off'
   }
 }
