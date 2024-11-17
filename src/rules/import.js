@@ -10,7 +10,7 @@ export default {
     'import/dynamic-import-chunkname': 'off',
     'import/export': 'error',
     'import/exports-last': 'error',
-    'import/extensions': ['error', 'always'],
+    'import/extensions': ['error', 'ignorePackages'],
     'import/first': ['error', 'absolute-first'],
     'import/group-exports': 'off',
     'import/max-dependencies': 'off',
@@ -30,7 +30,7 @@ export default {
     'import/no-extraneous-dependencies': [
       'error',
       {
-        devDependencies: ['**/eslint.config.js'],
+        devDependencies: ['**/*.config.js'],
         includeInternal: true,
         includeTypes: true,
         optionalDependencies: false,
@@ -50,7 +50,7 @@ export default {
     'import/no-relative-parent-imports': 'off',
     'import/no-restricted-paths': 'off',
     'import/no-self-import': 'error',
-    'import/no-unassigned-import': 'error',
+    'import/no-unassigned-import': 'off',
     'import/no-unresolved': 'error',
     'import/no-unused-modules': 'off',
     'import/no-useless-path-segments': 'error',

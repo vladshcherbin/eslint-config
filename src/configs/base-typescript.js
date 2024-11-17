@@ -6,7 +6,7 @@ export default [
   eslintTypescript,
   {
     rules: {
-      'import/extensions': ['error', 'always', { ts: 'never' }]
+      'import/extensions': ['error', 'ignorePackages', { ts: 'never' }]
     },
     settings: {
       'import/extensions': ['.js', '.ts'],
