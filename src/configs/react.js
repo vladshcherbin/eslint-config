@@ -5,6 +5,8 @@ export default [
   ...browser,
   react,
   {
-    'import/extensions': ['.js', '.jsx']
+    settings: {
+      'import/extensions': ['.js', '.jsx']
+    }
   }
 ]
