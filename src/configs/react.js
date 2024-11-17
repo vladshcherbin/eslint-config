@@ -1,5 +1,5 @@
-import browser from './browser.js'
 import react from '../rules/react.js'
+import browser from './browser.js'
 
 export default [
   ...browser,

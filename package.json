@@ -11,6 +11,7 @@
     "eslint-import-resolver-typescript": "^3.6.3",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-sort-destructure-keys": "^2.0.0",
     "globals": "^15.11.0",
     "typescript-eslint": "^8.12.2"

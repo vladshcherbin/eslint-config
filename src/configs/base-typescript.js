@@ -1,5 +1,5 @@
-import base from './base.js'
 import eslintTypescript from '../rules/eslint-typescript.js'
+import base from './base.js'
 
 export default [
   ...base,

@@ -1,8 +1,8 @@
-import plugin from 'eslint-plugin-import'
+import importPlugin from 'eslint-plugin-import'
 
 export default {
   plugins: {
-    import: plugin
+    import: importPlugin
   },
   rules: {
     'import/consistent-type-specifier-style': 'off',
