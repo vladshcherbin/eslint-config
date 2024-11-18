@@ -33,8 +33,7 @@ export default {
         devDependencies: ['**/*.config.js'],
         includeInternal: true,
         includeTypes: true,
-        optionalDependencies: false,
-        peerDependencies: false
+        optionalDependencies: false
       }
     ],
     'import/no-import-module-exports': 'error',
