@@ -1,5 +1,5 @@
-import globals from 'globals'
 import confusingBrowserGlobals from 'confusing-browser-globals'
+import globals from 'globals'
 import base from './base.js'
 
 export default [
