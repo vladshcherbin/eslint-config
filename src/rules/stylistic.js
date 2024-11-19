@@ -35,7 +35,7 @@ export default {
     '@stylistic/lines-between-class-members': 'error',
     '@stylistic/max-len': [
       'error',
-      100,
+      120,
       2,
       {
         ignoreRegExpLiterals: true,
