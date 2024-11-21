@@ -5,13 +5,11 @@ const base = {
     perfectionist
   },
   rules: {
-    '@typescript-eslint/adjacent-overload-signatures': 'off',
-    '@typescript-eslint/sort-type-constituents': 'off',
     'import-x/order': 'off',
     'perfectionist/sort-array-includes': 'error',
     'perfectionist/sort-classes': 'error',
-    'perfectionist/sort-decorators': 'error',
-    'perfectionist/sort-enums': 'error',
+    'perfectionist/sort-decorators': 'off',
+    'perfectionist/sort-enums': 'off',
     'perfectionist/sort-exports': 'error',
     'perfectionist/sort-heritage-clauses': 'error',
     'perfectionist/sort-imports': ['error', {
@@ -24,6 +22,35 @@ const base = {
       ],
       newlinesBetween: 'never'
     }],
+    'perfectionist/sort-interfaces': 'off',
+    'perfectionist/sort-intersection-types': 'off',
+    'perfectionist/sort-jsx-props': 'off',
+    'perfectionist/sort-maps': 'error',
+    'perfectionist/sort-modules': 'off',
+    'perfectionist/sort-named-exports': 'error',
+    'perfectionist/sort-named-imports': 'error',
+    'perfectionist/sort-object-types': 'off',
+    'perfectionist/sort-objects': 'error',
+    'perfectionist/sort-sets': 'error',
+    'perfectionist/sort-switch-case': 'error',
+    'perfectionist/sort-union-types': 'off',
+    'perfectionist/sort-variable-declarations': 'error',
+    'sort-imports': 'off',
+    'sort-keys': 'off'
+  },
+  settings: {
+    perfectionist: {
+      type: 'natural'
+    }
+  }
+}
+
+const typescript = {
+  rules: {
+    '@typescript-eslint/adjacent-overload-signatures': 'off',
+    '@typescript-eslint/sort-type-constituents': 'off',
+    'perfectionist/sort-decorators': 'error',
+    'perfectionist/sort-enums': 'error',
     'perfectionist/sort-interfaces': ['error', {
       customGroups: {
         createdTimestamp: '^createdAt$',
@@ -43,10 +70,6 @@ const base = {
       ]
     }],
     'perfectionist/sort-intersection-types': 'error',
-    'perfectionist/sort-jsx-props': 'off',
-    'perfectionist/sort-maps': 'error',
-    'perfectionist/sort-named-exports': 'error',
-    'perfectionist/sort-named-imports': 'error',
     'perfectionist/sort-object-types': ['error', {
       customGroups: {
         createdTimestamp: '^createdAt$',
@@ -65,19 +88,9 @@ const base = {
         'removedTimestamp'
       ]
     }],
-    'perfectionist/sort-objects': 'error',
-    'perfectionist/sort-sets': 'error',
-    'perfectionist/sort-switch-case': 'error',
     'perfectionist/sort-union-types': ['error', {
       groups: ['unknown', 'nullish']
-    }],
-    'perfectionist/sort-variable-declarations': 'error',
-    'sort-imports': 'off'
-  },
-  settings: {
-    perfectionist: {
-      type: 'natural'
-    }
+    }]
   }
 }
 
@@ -119,5 +132,6 @@ const react = {
 
 export default {
   base,
-  react
+  react,
+  typescript
 }
