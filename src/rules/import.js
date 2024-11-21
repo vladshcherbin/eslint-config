@@ -16,7 +16,7 @@ export default {
     'import/max-dependencies': 'off',
     'import/named': 'error',
     'import/namespace': 'error',
-    'import/newline-after-import': ['error', { considerComments: true, exactCount: true }],
+    'import/newline-after-import': ['error', { exactCount: true }],
     'import/no-absolute-path': 'error',
     'import/no-amd': 'error',
     'import/no-anonymous-default-export': 'off',
