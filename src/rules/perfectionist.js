@@ -43,6 +43,7 @@ const base = {
       ]
     }],
     'perfectionist/sort-intersection-types': 'error',
+    'perfectionist/sort-jsx-props': 'off',
     'perfectionist/sort-maps': 'error',
     'perfectionist/sort-named-exports': 'error',
     'perfectionist/sort-named-imports': 'error',
