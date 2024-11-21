@@ -68,6 +68,18 @@ const base = {
   }
 }
 
+const browser = {
+  rules: {
+    'import-x/no-nodejs-modules': 'error'
+  }
+}
+
+const react = {
+  settings: {
+    'import-x/extensions': ['.js', '.jsx']
+  }
+}
+
 const typescript = {
   rules: {
     'import-x/extensions': ['error', 'ignorePackages', { checkTypeImports: true, pattern: { ts: 'never' } }],
@@ -88,18 +100,6 @@ const typescript = {
     'import-x/external-module-folders': ['node_modules', 'node_modules/@types'],
     'import-x/parsers': { '@typescript-eslint/parser': ['.ts'] },
     'import-x/resolver': { typescript: true }
-  }
-}
-
-const browser = {
-  rules: {
-    'import-x/no-nodejs-modules': 'error'
-  }
-}
-
-const react = {
-  settings: {
-    'import-x/extensions': ['.js', '.jsx']
   }
 }
 

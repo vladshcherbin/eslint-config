@@ -45,6 +45,42 @@ const base = {
   }
 }
 
+const react = {
+  rules: {
+    'perfectionist/sort-imports': ['error', {
+      customGroups: {
+        type: {
+          react: ['^react$', '^react-.+']
+        },
+        value: {
+          react: ['^react$', '^react-.+']
+        }
+      },
+      groups: [
+        'react',
+        ['type', 'builtin', 'external'],
+        ['internal-type', 'internal'],
+        ['parent-type', 'sibling-type', 'index-type', 'parent', 'sibling', 'index'],
+        'object',
+        'unknown'
+      ],
+      newlinesBetween: 'never'
+    }],
+    'perfectionist/sort-jsx-props': ['error', {
+      customGroups: {
+        callback: '^on.'
+      },
+      groups: [
+        'multiline',
+        'unknown',
+        'shorthand',
+        'callback'
+      ]
+    }],
+    'react/jsx-sort-props': 'off'
+  }
+}
+
 const typescript = {
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'off',
@@ -91,42 +127,6 @@ const typescript = {
     'perfectionist/sort-union-types': ['error', {
       groups: ['unknown', 'nullish']
     }]
-  }
-}
-
-const react = {
-  rules: {
-    'perfectionist/sort-imports': ['error', {
-      customGroups: {
-        type: {
-          react: ['^react$', '^react-.+']
-        },
-        value: {
-          react: ['^react$', '^react-.+']
-        }
-      },
-      groups: [
-        'react',
-        ['type', 'builtin', 'external'],
-        ['internal-type', 'internal'],
-        ['parent-type', 'sibling-type', 'index-type', 'parent', 'sibling', 'index'],
-        'object',
-        'unknown'
-      ],
-      newlinesBetween: 'never'
-    }],
-    'perfectionist/sort-jsx-props': ['error', {
-      customGroups: {
-        callback: '^on.'
-      },
-      groups: [
-        'multiline',
-        'unknown',
-        'shorthand',
-        'callback'
-      ]
-    }],
-    'react/jsx-sort-props': 'off'
   }
 }
 
