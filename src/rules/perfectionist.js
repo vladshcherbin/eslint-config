@@ -7,7 +7,7 @@ const base = {
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'off',
     '@typescript-eslint/sort-type-constituents': 'off',
-    'import/order': 'off',
+    'import-x/order': 'off',
     'perfectionist/sort-array-includes': 'error',
     'perfectionist/sort-classes': 'error',
     'perfectionist/sort-decorators': 'error',
@@ -71,8 +71,6 @@ const base = {
       groups: ['unknown', 'nullish']
     }],
     'perfectionist/sort-variable-declarations': 'error',
-    'simple-import-sort/exports': 'off',
-    'simple-import-sort/imports': 'off',
     'sort-imports': 'off'
   },
   settings: {
