@@ -30,7 +30,17 @@ const base = {
     'perfectionist/sort-named-exports': 'error',
     'perfectionist/sort-named-imports': 'error',
     'perfectionist/sort-object-types': 'off',
-    'perfectionist/sort-objects': 'error',
+    'perfectionist/sort-objects': ['error', {
+      customGroups: {
+        id: 'id',
+        status: 'status'
+      },
+      groups: [
+        'id',
+        'status',
+        'unknown'
+      ]
+    }],
     'perfectionist/sort-sets': 'error',
     'perfectionist/sort-switch-case': 'error',
     'perfectionist/sort-union-types': 'off',
@@ -68,10 +78,28 @@ const react = {
     }],
     'perfectionist/sort-jsx-props': ['error', {
       customGroups: {
-        callback: '^on.'
+        action: 'action',
+        callback: '^on.+',
+        checked: 'checked',
+        className: 'className',
+        htmlFor: 'htmlFor',
+        id: 'id',
+        key: 'key',
+        name: 'name',
+        ref: 'ref',
+        type: 'type',
+        value: 'value'
       },
       groups: [
-        'multiline',
+        'key',
+        'ref',
+        'action',
+        'type',
+        'htmlFor',
+        'id',
+        'className',
+        'name',
+        ['checked', 'value'],
         'unknown',
         'shorthand',
         'callback'
