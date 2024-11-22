@@ -47,7 +47,7 @@ export default {
     '@stylistic/max-statements-per-line': 'error',
     '@stylistic/member-delimiter-style': 'off',
     '@stylistic/multiline-comment-style': 'off',
-    '@stylistic/multiline-ternary': ['error', 'always-multiline'],
+    '@stylistic/multiline-ternary': ['error', 'always-multiline', { ignoreJSX: true }],
     '@stylistic/new-parens': 'error',
     '@stylistic/newline-per-chained-call': ['error', { ignoreChainWithDepth: 4 }],
     '@stylistic/no-confusing-arrow': 'error',
