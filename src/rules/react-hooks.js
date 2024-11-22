@@ -5,7 +5,7 @@ export default {
     'react-hooks': reactHooks
   },
   rules: {
-    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error'
   }
 }
