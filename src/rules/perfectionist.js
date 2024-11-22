@@ -32,8 +32,8 @@ const base = {
     'perfectionist/sort-object-types': 'off',
     'perfectionist/sort-objects': ['error', {
       customGroups: {
-        id: 'id',
-        status: 'status'
+        id: '^id$',
+        status: '^status$'
       },
       groups: [
         'id',
@@ -60,10 +60,10 @@ const react = {
     'perfectionist/sort-imports': ['error', {
       customGroups: {
         type: {
-          react: ['^react$', '^react-.+']
+          react: ['^react$', '^react-.+$']
         },
         value: {
-          react: ['^react$', '^react-.+']
+          react: ['^react$', '^react-.+$']
         }
       },
       groups: [
@@ -78,17 +78,17 @@ const react = {
     }],
     'perfectionist/sort-jsx-props': ['error', {
       customGroups: {
-        action: 'action',
-        callback: '^on.+',
-        checked: 'checked',
-        className: 'className',
-        htmlFor: 'htmlFor',
-        id: 'id',
-        key: 'key',
-        name: 'name',
-        ref: 'ref',
-        type: 'type',
-        value: 'value'
+        id: '^id$',
+        action: '^action$',
+        callback: '^on.+$',
+        checked: '^checked$',
+        className: '^className$',
+        htmlFor: '^htmlFor$',
+        key: '^key$',
+        name: '^name$',
+        ref: '^ref$',
+        type: '^type$',
+        value: '^value$'
       },
       groups: [
         'key',
@@ -117,9 +117,9 @@ const typescript = {
     'perfectionist/sort-enums': 'error',
     'perfectionist/sort-interfaces': ['error', {
       customGroups: {
+        id: '^id$',
         createdTimestamp: '^createdAt$',
         eventTimestamp: '^(?!(?:created|removed|updated)).*At$',
-        id: '^id$',
         relatedId: 'Id$',
         removedTimestamp: '^removedAt$',
         updatedTimestamp: '^updatedAt$'
@@ -136,9 +136,9 @@ const typescript = {
     'perfectionist/sort-intersection-types': 'error',
     'perfectionist/sort-object-types': ['error', {
       customGroups: {
+        id: '^id$',
         createdTimestamp: '^createdAt$',
         eventTimestamp: '^(?!(?:created|removed|updated)).*At$',
-        id: '^id$',
         relatedId: 'Id$',
         removedTimestamp: '^removedAt$',
         updatedTimestamp: '^updatedAt$'
