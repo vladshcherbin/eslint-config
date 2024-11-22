@@ -63,7 +63,7 @@ const base = {
     'import-x/no-webpack-loader-syntax': 'off',
     'import-x/order': ['error', { 'newlines-between': 'never' }],
     'import-x/prefer-default-export': 'off',
-    'import-x/unambiguous': 'error',
+    'import-x/unambiguous': 'off',
     'no-duplicate-imports': 'off'
   }
 }
