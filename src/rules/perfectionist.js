@@ -33,11 +33,14 @@ const base = {
     'perfectionist/sort-objects': ['error', {
       customGroups: {
         id: '^id$',
-        status: '^status$'
+        name: '^name$',
+        status: '^status$',
+        title: '^title$'
       },
       groups: [
         'id',
         'status',
+        ['name', 'title'],
         'unknown'
       ]
     }],
