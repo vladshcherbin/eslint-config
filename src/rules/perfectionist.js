@@ -1,3 +1,4 @@
+/* eslint 'perfectionist/sort-objects': ['error', {}] */
 import perfectionist from 'eslint-plugin-perfectionist'
 
 const base = {
@@ -81,12 +82,12 @@ const react = {
     }],
     'perfectionist/sort-jsx-props': ['error', {
       customGroups: {
-        id: '^id$',
         action: '^action$',
         callback: '^on.+$',
         checked: '^checked$',
         className: '^className$',
         htmlFor: '^htmlFor$',
+        id: '^id$',
         key: '^key$',
         name: '^name$',
         ref: '^ref$',
@@ -120,9 +121,9 @@ const typescript = {
     'perfectionist/sort-enums': 'error',
     'perfectionist/sort-interfaces': ['error', {
       customGroups: {
-        id: '^id$',
         createdTimestamp: '^createdAt$',
         eventTimestamp: '^(?!(?:created|removed|updated)).*At$',
+        id: '^id$',
         relatedId: 'Id$',
         removedTimestamp: '^removedAt$',
         updatedTimestamp: '^updatedAt$'
@@ -139,9 +140,9 @@ const typescript = {
     'perfectionist/sort-intersection-types': 'error',
     'perfectionist/sort-object-types': ['error', {
       customGroups: {
-        id: '^id$',
         createdTimestamp: '^createdAt$',
         eventTimestamp: '^(?!(?:created|removed|updated)).*At$',
+        id: '^id$',
         relatedId: 'Id$',
         removedTimestamp: '^removedAt$',
         updatedTimestamp: '^updatedAt$'
