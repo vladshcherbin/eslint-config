@@ -32,22 +32,22 @@ const base = {
     'perfectionist/sort-named-imports': 'error',
     'perfectionist/sort-object-types': 'off',
     'perfectionist/sort-objects': ['error', {
-      customGroups: {
-        body: '^body$',
-        headers: '^headers$',
-        id: '^id$',
-        method: '^method$',
-        name: '^name$',
-        status: '^status$',
-        title: '^title$'
-      },
+      // customGroups: {
+      //   body: '^body$',
+      //   headers: '^headers$',
+      //   id: '^id$',
+      //   method: '^method$',
+      //   name: '^name$',
+      //   status: '^status$',
+      //   title: '^title$'
+      // },
       groups: [
-        'id',
-        'status',
-        ['name', 'title'],
-        'method',
-        'headers',
-        'body',
+        // 'id',
+        // 'status',
+        // ['name', 'title'],
+        // 'method',
+        // 'headers',
+        // 'body',
         'unknown'
       ]
     }],
