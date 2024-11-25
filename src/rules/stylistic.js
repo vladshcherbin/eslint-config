@@ -118,7 +118,7 @@ const jsx = {
     '@stylistic/jsx-indent-props': 'off',
     '@stylistic/jsx-max-props-per-line': ['error', { when: 'multiline' }],
     '@stylistic/jsx-newline': ['error', { prevent: true }],
-    '@stylistic/jsx-one-expression-per-line': ['error', { allow: 'single-child' }],
+    '@stylistic/jsx-one-expression-per-line': ['error', { allow: 'single-line' }],
     '@stylistic/jsx-pascal-case': 'error',
     '@stylistic/jsx-props-no-multi-spaces': 'error',
     '@stylistic/jsx-quotes': 'error',
