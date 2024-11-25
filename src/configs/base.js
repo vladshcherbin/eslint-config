@@ -8,7 +8,7 @@ import stylistic from '../rules/stylistic.js'
 export default [
   eslint,
   importX.base,
-  stylistic,
+  stylistic.base,
   sortDestructureKeys,
   perfectionist.base,
   ignores

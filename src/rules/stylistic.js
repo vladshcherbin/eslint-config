@@ -1,6 +1,6 @@
 import stylistic from '@stylistic/eslint-plugin'
 
-export default {
+const base = {
   plugins: {
     '@stylistic': stylistic
   },
@@ -97,4 +97,48 @@ export default {
     '@stylistic/wrap-regex': 'off',
     '@stylistic/yield-star-spacing': 'error'
   }
+}
+
+const jsx = {
+  rules: {
+    '@stylistic/jsx-child-element-spacing': 'error',
+    '@stylistic/jsx-closing-bracket-location': ['error', 'line-aligned'],
+    '@stylistic/jsx-closing-tag-location': 'error',
+    '@stylistic/jsx-curly-brace-presence': ['error', {
+      children: 'never',
+      propElementValues: 'always',
+      props: 'never'
+    }],
+    '@stylistic/jsx-curly-newline': ['error', 'never'],
+    '@stylistic/jsx-curly-spacing': ['error', { allowMultiline: false, children: true }],
+    '@stylistic/jsx-equals-spacing': 'error',
+    '@stylistic/jsx-first-prop-new-line': 'error',
+    '@stylistic/jsx-function-call-newline': 'error',
+    '@stylistic/jsx-indent': 'off',
+    '@stylistic/jsx-indent-props': 'off',
+    '@stylistic/jsx-max-props-per-line': ['error', { when: 'multiline' }],
+    '@stylistic/jsx-newline': ['error', { prevent: true }],
+    '@stylistic/jsx-one-expression-per-line': ['error', { allow: 'single-child' }],
+    '@stylistic/jsx-pascal-case': 'error',
+    '@stylistic/jsx-props-no-multi-spaces': 'error',
+    '@stylistic/jsx-quotes': 'error',
+    '@stylistic/jsx-self-closing-comp': 'error',
+    '@stylistic/jsx-sort-props': 'off',
+    '@stylistic/jsx-tag-spacing': ['error', { beforeClosing: 'never' }],
+    '@stylistic/jsx-wrap-multilines': ['error', {
+      arrow: 'parens-new-line',
+      assignment: 'parens-new-line',
+      condition: 'parens-new-line',
+      declaration: 'parens-new-line',
+      logical: 'parens-new-line',
+      prop: 'parens-new-line',
+      propertyValue: 'parens-new-line',
+      return: 'parens-new-line'
+    }]
+  }
+}
+
+export default {
+  base,
+  jsx
 }

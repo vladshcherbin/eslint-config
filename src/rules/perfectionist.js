@@ -67,6 +67,7 @@ const base = {
 
 const react = {
   rules: {
+    '@stylistic/jsx-sort-props': 'off',
     'perfectionist/sort-imports': ['error', {
       customGroups: {
         type: {
