@@ -71,9 +71,11 @@ const react = {
       customGroups: {
         action: '^action$',
         alt: '^alt$',
+        ariaAttributes: '^aria-.+$',
         callback: '^on.+$',
         checked: '^checked$',
         className: '^className$',
+        dataAttributes: '^data-.+$',
         defaultChecked: '^defaultChecked$',
         defaultValue: '^defaultValue$',
         height: '^height$',
@@ -127,6 +129,8 @@ const react = {
         'multiple',
         'title',
         'unknown',
+        'dataAttributes',
+        'ariaAttributes',
         'callback'
       ]
     }],
