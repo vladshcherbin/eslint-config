@@ -1,4 +1,3 @@
-/* eslint 'perfectionist/sort-objects': ['error', {}] */
 import perfectionist from 'eslint-plugin-perfectionist'
 
 const base = {
@@ -31,26 +30,7 @@ const base = {
     'perfectionist/sort-named-exports': 'error',
     'perfectionist/sort-named-imports': 'error',
     'perfectionist/sort-object-types': 'off',
-    'perfectionist/sort-objects': ['error', {
-      // customGroups: {
-      //   body: '^body$',
-      //   headers: '^headers$',
-      //   id: '^id$',
-      //   method: '^method$',
-      //   name: '^name$',
-      //   status: '^status$',
-      //   title: '^title$'
-      // },
-      groups: [
-        // 'id',
-        // 'status',
-        // ['name', 'title'],
-        // 'method',
-        // 'headers',
-        // 'body',
-        'unknown'
-      ]
-    }],
+    'perfectionist/sort-objects': 'error',
     'perfectionist/sort-sets': 'error',
     'perfectionist/sort-switch-case': 'error',
     'perfectionist/sort-union-types': 'off',
