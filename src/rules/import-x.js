@@ -16,7 +16,7 @@ const base = {
     'import-x/max-dependencies': 'off',
     'import-x/named': 'error',
     'import-x/namespace': 'error',
-    'import-x/newline-after-import': ['error', { exactCount: true }],
+    'import-x/newline-after-import': 'error',
     'import-x/no-absolute-path': 'error',
     'import-x/no-amd': 'error',
     'import-x/no-anonymous-default-export': ['error', {
