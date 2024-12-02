@@ -1,7 +1,7 @@
 {
   "name": "@shcherbin/eslint-config",
   "description": "Shareable eslint config",
-  "version": "0.12.3",
+  "version": "0.13.0",
   "author": "Vlad Shcherbin <vlad.shcherbin@gmail.com>",
   "repository": "vladshcherbin/eslint-config",
   "main": "src/index.js",
