@@ -9,7 +9,7 @@ const base = {
     'import-x/default': 'error',
     'import-x/dynamic-import-chunkname': 'off',
     'import-x/export': 'error',
-    'import-x/exports-last': 'error',
+    'import-x/exports-last': 'off',
     'import-x/extensions': ['error', 'ignorePackages'],
     'import-x/first': ['error', 'absolute-first'],
     'import-x/group-exports': 'off',
