@@ -66,6 +66,9 @@ const base = {
     'import-x/prefer-default-export': 'off',
     'import-x/unambiguous': 'off',
     'no-duplicate-imports': 'off'
+  },
+  settings: {
+    'import-x/resolver': 'typescript'
   }
 }
 
@@ -99,8 +102,7 @@ const typescript = {
   settings: {
     'import-x/extensions': ['.js', '.ts'],
     'import-x/external-module-folders': ['node_modules', 'node_modules/@types'],
-    'import-x/parsers': { '@typescript-eslint/parser': ['.ts'] },
-    'import-x/resolver': { typescript: true }
+    'import-x/parsers': { '@typescript-eslint/parser': ['.ts'] }
   }
 }
 
