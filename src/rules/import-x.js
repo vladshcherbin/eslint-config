@@ -53,7 +53,8 @@ const base = {
     'import-x/no-nodejs-modules': 'off',
     'import-x/no-relative-packages': 'error',
     'import-x/no-relative-parent-imports': 'off',
-    'import-x/no-rename-default': 'error',
+    // Too many false positives
+    'import-x/no-rename-default': 'off',
     'import-x/no-restricted-paths': 'off',
     'import-x/no-self-import': 'error',
     'import-x/no-unassigned-import': 'off',
