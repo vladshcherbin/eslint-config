@@ -68,7 +68,7 @@ const base = {
     'no-duplicate-imports': 'off'
   },
   settings: {
-    'import-x/resolver': 'typescript'
+    'import-x/resolver': 'oxc'
   }
 }
 
