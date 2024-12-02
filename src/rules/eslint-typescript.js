@@ -174,6 +174,7 @@ export default {
     'init-declarations': 'off',
     'max-params': 'off',
     'no-array-constructor': 'off',
+    'no-class-assign': 'off',
     'no-const-assign': 'off',
     'no-dupe-args': 'off',
     'no-dupe-class-members': 'off',
