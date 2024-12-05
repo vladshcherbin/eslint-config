@@ -151,8 +151,9 @@ export default {
       {
         allowAny: false,
         allowBoolean: false,
+        allowNever: false,
         allowNullish: false,
-        allowNumber: false,
+        allowNumber: true,
         allowRegExp: false
       }
     ],
