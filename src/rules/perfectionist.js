@@ -151,39 +151,77 @@ const typescript = {
     'perfectionist/sort-decorators': 'error',
     'perfectionist/sort-enums': 'error',
     'perfectionist/sort-interfaces': ['error', {
-      customGroups: {
-        createdTimestamp: '^createdAt$',
-        eventTimestamp: '^(?!(?:created|removed|updated)).*At$',
-        id: '^id$',
-        relatedId: 'Id$',
-        removedTimestamp: '^removedAt$',
-        updatedTimestamp: '^updatedAt$'
-      },
+      customGroups: [
+        {
+          elementNamePattern: '^createdAt$',
+          groupName: 'createdTimestamp'
+        },
+        {
+          elementNamePattern: '^(?!(?:created|removed|updated)).*At$',
+          groupName: 'eventTimestamp'
+        },
+        {
+          elementNamePattern: '^id$',
+          groupName: 'id'
+        },
+        {
+          elementNamePattern: 'Id$',
+          groupName: 'relatedId'
+        },
+        {
+          elementNamePattern: '^removedAt$',
+          groupName: 'removedTimestamp'
+        },
+        {
+          elementNamePattern: '^updatedAt$',
+          groupName: 'updatedTimestamp'
+        }
+      ],
       groups: [
         'id',
         'relatedId',
-        ['unknown', 'method', 'multiline'],
+        'unknown',
         'eventTimestamp',
-        ['createdTimestamp', 'updatedTimestamp'],
+        'createdTimestamp',
+        'updatedTimestamp',
         'removedTimestamp'
       ]
     }],
     'perfectionist/sort-intersection-types': 'error',
     'perfectionist/sort-object-types': ['error', {
-      customGroups: {
-        createdTimestamp: '^createdAt$',
-        eventTimestamp: '^(?!(?:created|removed|updated)).*At$',
-        id: '^id$',
-        relatedId: 'Id$',
-        removedTimestamp: '^removedAt$',
-        updatedTimestamp: '^updatedAt$'
-      },
+      customGroups: [
+        {
+          elementNamePattern: '^createdAt$',
+          groupName: 'createdTimestamp'
+        },
+        {
+          elementNamePattern: '^(?!(?:created|removed|updated)).*At$',
+          groupName: 'eventTimestamp'
+        },
+        {
+          elementNamePattern: '^id$',
+          groupName: 'id'
+        },
+        {
+          elementNamePattern: 'Id$',
+          groupName: 'relatedId'
+        },
+        {
+          elementNamePattern: '^removedAt$',
+          groupName: 'removedTimestamp'
+        },
+        {
+          elementNamePattern: '^updatedAt$',
+          groupName: 'updatedTimestamp'
+        }
+      ],
       groups: [
         'id',
         'relatedId',
-        ['unknown', 'method', 'multiline'],
+        'unknown',
         'eventTimestamp',
-        ['createdTimestamp', 'updatedTimestamp'],
+        'createdTimestamp',
+        'updatedTimestamp',
         'removedTimestamp'
       ]
     }],
