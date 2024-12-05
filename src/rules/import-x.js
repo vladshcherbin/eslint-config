@@ -1,3 +1,4 @@
+import { createOxcImportResolver } from 'eslint-import-resolver-oxc'
 import importX from 'eslint-plugin-import-x'
 
 const base = {
@@ -68,7 +69,7 @@ const base = {
     'no-duplicate-imports': 'off'
   },
   settings: {
-    'import-x/resolver': 'oxc'
+    'import-x/resolver-next': [createOxcImportResolver()]
   }
 }
 
