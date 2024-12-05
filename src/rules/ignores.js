@@ -1,3 +1,8 @@
 export default {
-  ignores: ['build/', 'dist/']
+  ignores: [
+    '.next/',
+    '.wrangler/',
+    'build/',
+    'dist/'
+  ]
 }
