@@ -35,7 +35,7 @@ const base = {
     '@stylistic/lines-between-class-members': 'error',
     '@stylistic/max-len': [
       'error',
-      120,
+      100,
       2,
       {
         ignoreRegExpLiterals: true,
