@@ -67,10 +67,12 @@ export default {
     '@eslint-react/no-component-will-mount': 'off',
     '@eslint-react/no-component-will-receive-props': 'off',
     '@eslint-react/no-component-will-update': 'off',
+    '@eslint-react/no-context-provider': 'error',
     '@eslint-react/no-create-ref': 'error',
     '@eslint-react/no-default-props': 'error',
     '@eslint-react/no-direct-mutation-state': 'off',
     '@eslint-react/no-duplicate-key': 'error',
+    '@eslint-react/no-forward-ref': 'error',
     '@eslint-react/no-implicit-key': 'error',
     // TODO test in real projects
     '@eslint-react/no-leaked-conditional-rendering': 'off',
