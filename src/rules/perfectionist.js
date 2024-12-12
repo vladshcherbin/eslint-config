@@ -65,6 +65,7 @@ const react = {
         'object',
         'unknown'
       ],
+      internalPattern: ['^@/.*'],
       newlinesBetween: 'never'
     }],
     'perfectionist/sort-jsx-props': ['error', {
