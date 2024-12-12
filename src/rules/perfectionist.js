@@ -147,6 +147,7 @@ const react = {
 }
 
 const typescript = {
+  files: ['**/*.ts', '**/*.tsx'],
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'off',
     '@typescript-eslint/sort-type-constituents': 'off',

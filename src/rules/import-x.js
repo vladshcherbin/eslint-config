@@ -80,12 +80,15 @@ const react = {
 }
 
 const typescript = {
+  files: ['**/*.ts', '**/*.tsx'],
   rules: {
-    'import-x/extensions': ['error', 'ignorePackages', { checkTypeImports: true, pattern: { ts: 'never' } }],
+    'import-x/extensions': [
+      'error',
+      'ignorePackages',
+      { checkTypeImports: true, pattern: { ts: 'never' } }
+    ],
     'import-x/named': 'off',
-    'import-x/no-duplicates': ['error', { 'prefer-inline': true }],
-    // Turn off until alias configuration is supported
-    'import-x/no-extraneous-dependencies': 'off'
+    'import-x/no-duplicates': ['error', { 'prefer-inline': true }]
   },
   settings: {
     'import-x/extensions': ['.js', '.ts'],
@@ -95,6 +98,14 @@ const typescript = {
 }
 
 const reactTypescript = {
+  files: ['**/*.ts', '**/*.tsx'],
+  rules: {
+    'import-x/extensions': [
+      'error',
+      'ignorePackages',
+      { checkTypeImports: true, pattern: { ts: 'never', tsx: 'never' } }
+    ]
+  },
   settings: {
     'import-x/extensions': ['.js', '.jsx', '.ts', '.tsx'],
     'import-x/parsers': { '@typescript-eslint/parser': ['.ts', '.tsx'] }
