@@ -35,14 +35,8 @@ const base = {
     'import-x/no-duplicates': 'error',
     'import-x/no-dynamic-require': 'error',
     'import-x/no-empty-named-blocks': 'error',
-    'import-x/no-extraneous-dependencies': [
-      'error',
-      {
-        devDependencies: ['*.config.js'],
-        includeInternal: true,
-        optionalDependencies: false
-      }
-    ],
+    // Turn off until alias configuration is supported
+    'import-x/no-extraneous-dependencies': 'off',
     'import-x/no-import-module-exports': 'error',
     'import-x/no-internal-modules': 'off',
     'import-x/no-mutable-exports': 'error',
@@ -90,15 +84,8 @@ const typescript = {
     'import-x/extensions': ['error', 'ignorePackages', { checkTypeImports: true, pattern: { ts: 'never' } }],
     'import-x/named': 'off',
     'import-x/no-duplicates': ['error', { 'prefer-inline': true }],
-    'import-x/no-extraneous-dependencies': [
-      'error',
-      {
-        devDependencies: ['*.config.js'],
-        includeInternal: true,
-        includeTypes: true,
-        optionalDependencies: false
-      }
-    ]
+    // Turn off until alias configuration is supported
+    'import-x/no-extraneous-dependencies': 'off'
   },
   settings: {
     'import-x/extensions': ['.js', '.ts'],
