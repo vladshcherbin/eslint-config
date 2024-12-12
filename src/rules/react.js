@@ -5,7 +5,7 @@ import reactWebApi from 'eslint-plugin-react-web-api'
 import reactX from 'eslint-plugin-react-x'
 
 export default {
-  files: ['**/*.js', '**/*.jsx'],
+  files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
   languageOptions: {
     parserOptions: {
       ecmaFeatures: {

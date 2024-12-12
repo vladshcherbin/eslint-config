@@ -94,9 +94,17 @@ const typescript = {
   }
 }
 
+const reactTypescript = {
+  settings: {
+    'import-x/extensions': ['.js', '.jsx', '.ts', '.tsx'],
+    'import-x/parsers': { '@typescript-eslint/parser': ['.ts', '.tsx'] }
+  }
+}
+
 export default {
   base,
   browser,
   react,
+  reactTypescript,
   typescript
 }

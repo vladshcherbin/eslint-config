@@ -1,7 +1,7 @@
 import { parser, plugin } from 'typescript-eslint'
 
 export default {
-  files: ['**/*.js', '**/*.ts'],
+  files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
   languageOptions: {
     parser,
     parserOptions: {
