@@ -112,9 +112,25 @@ const reactTypescript = {
   }
 }
 
+const nextTypescript = {
+  files: ['**/*.jsx', '**/*.jsx', '**/*.ts', '**/*.tsx'],
+  rules: {
+    'import-x/extensions': [
+      'error',
+      'ignorePackages',
+      { checkTypeImports: true, pattern: { ts: 'never', tsx: 'never' } }
+    ]
+  },
+  settings: {
+    'import-x/extensions': ['.js', '.jsx', '.ts', '.tsx'],
+    'import-x/parsers': { '@typescript-eslint/parser': ['.js', '.jsx', '.ts', '.tsx'] }
+  }
+}
+
 export default {
   base,
   browser,
+  nextTypescript,
   react,
   reactTypescript,
   typescript

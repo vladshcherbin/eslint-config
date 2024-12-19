@@ -15,7 +15,7 @@ export default [
   reactHooks,
   jsxA11y,
   stylistic.jsx,
-  importX.reactTypescript,
+  importX.nextTypescript,
   perfectionist.react,
   next,
   {
