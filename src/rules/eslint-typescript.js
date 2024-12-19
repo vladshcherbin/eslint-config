@@ -159,7 +159,8 @@ export default {
     ],
     '@typescript-eslint/return-await': 'error',
     '@typescript-eslint/sort-type-constituents': 'off',
-    '@typescript-eslint/strict-boolean-expressions': 'error',
+    // TODO test and configure
+    '@typescript-eslint/strict-boolean-expressions': 'off',
     '@typescript-eslint/switch-exhaustiveness-check': 'error',
     '@typescript-eslint/triple-slash-reference': 'error',
     '@typescript-eslint/typedef': 'off',
