@@ -18,7 +18,7 @@ export default {
     '@next/next/no-head-element': 'error',
     '@next/next/no-head-import-in-document': 'error',
     '@next/next/no-html-link-for-pages': 'error',
-    '@next/next/no-img-element': 'error',
+    '@next/next/no-img-element': 'off',
     '@next/next/no-page-custom-font': 'error',
     '@next/next/no-script-component-in-head': 'error',
     '@next/next/no-styled-jsx-in-document': 'error',
