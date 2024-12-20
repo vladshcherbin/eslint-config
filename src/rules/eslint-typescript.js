@@ -65,8 +65,11 @@ export default {
     '@typescript-eslint/no-loss-of-precision': 'off',
     '@typescript-eslint/no-magic-numbers': 'off',
     '@typescript-eslint/no-meaningless-void-operator': 'error',
-    '@typescript-eslint/no-misused-new': 'error',
-    '@typescript-eslint/no-misused-promises': 'error',
+    '@typescript-eslint/no-misused-promises': ['error', {
+      checksVoidReturn: {
+        attributes: false
+      }
+    }],
     '@typescript-eslint/no-mixed-enums': 'error',
     '@typescript-eslint/no-namespace': 'error',
     '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
