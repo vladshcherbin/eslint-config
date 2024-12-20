@@ -16,6 +16,7 @@ export default [
   jsxA11y,
   stylistic.jsx,
   importX.react,
+  importX.next,
   perfectionist.react,
   next,
   {

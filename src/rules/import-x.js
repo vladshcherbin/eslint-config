@@ -79,6 +79,17 @@ const react = {
   }
 }
 
+const next = {
+  files: ['**/*.js', '**/*.jsx'],
+  rules: {
+    'import-x/extensions': [
+      'error',
+      'ignorePackages',
+      { pattern: { js: 'never', jsx: 'never' } }
+    ]
+  }
+}
+
 const typescript = {
   files: ['**/*.ts', '**/*.tsx'],
   rules: {
@@ -113,12 +124,12 @@ const reactTypescript = {
 }
 
 const nextTypescript = {
-  files: ['**/*.jsx', '**/*.jsx', '**/*.ts', '**/*.tsx'],
+  files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
   rules: {
     'import-x/extensions': [
       'error',
       'ignorePackages',
-      { checkTypeImports: true, pattern: { ts: 'never', tsx: 'never' } }
+      { checkTypeImports: true, pattern: { js: 'never', jsx: 'never', ts: 'never', tsx: 'never' } }
     ]
   },
   settings: {
@@ -130,6 +141,7 @@ const nextTypescript = {
 export default {
   base,
   browser,
+  next,
   nextTypescript,
   react,
   reactTypescript,
