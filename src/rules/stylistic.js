@@ -138,7 +138,23 @@ const jsx = {
   }
 }
 
+const typescript = {
+  rules: {
+    '@stylistic/member-delimiter-style': ['error', {
+      multiline: {
+        delimiter: 'none',
+        requireLast: false
+      },
+      singleline: {
+        delimiter: 'semi',
+        requireLast: false
+      }
+    }]
+  }
+}
+
 export default {
   base,
-  jsx
+  jsx,
+  typescript
 }
