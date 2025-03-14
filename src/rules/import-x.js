@@ -96,7 +96,7 @@ const typescript = {
     'import-x/extensions': [
       'error',
       'ignorePackages',
-      { checkTypeImports: true, pattern: { ts: 'never' } }
+      { checkTypeImports: true }
     ],
     'import-x/named': 'off',
     'import-x/no-duplicates': ['error', { 'prefer-inline': true }]
