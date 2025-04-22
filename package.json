@@ -29,9 +29,9 @@
     "eslint": ">= 9.15.0"
   },
   "pnpm": {
-    "ignoredBuiltDependencies": [
-      "unrs-resolver"
-    ]
+    "overrides": {
+      "unrs-resolver": "1.5.0"
+    }
   },
   "files": [
     "src"
