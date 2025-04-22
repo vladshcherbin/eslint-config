@@ -29,6 +29,11 @@
   "peerDependencies": {
     "eslint": ">= 9.15.0"
   },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "unrs-resolver"
+    ]
+  },
   "files": [
     "src"
   ],
