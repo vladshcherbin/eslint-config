@@ -1,8 +1,6 @@
-export default {
-  ignores: [
-    '.next/',
-    '.wrangler/',
-    'build/',
-    'dist/'
-  ]
-}
+import { globalIgnores } from 'eslint/config'
+
+export default globalIgnores([
+  'build',
+  'dist'
+])

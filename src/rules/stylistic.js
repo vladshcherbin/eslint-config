@@ -1,9 +1,14 @@
 import stylistic from '@stylistic/eslint-plugin'
+import { defineConfig } from 'eslint/config'
 
-const base = {
-  plugins: {
-    '@stylistic': stylistic
-  },
+export default defineConfig({
+  extends: [
+    // eslint-disable-next-line import-x/no-named-as-default-member
+    stylistic.configs.customize({
+      commaDangle: 'never',
+      jsx: false
+    })
+  ],
   rules: {
     '@stylistic/array-bracket-newline': ['error', 'consistent'],
     '@stylistic/array-bracket-spacing': 'error',
@@ -12,20 +17,19 @@ const base = {
     '@stylistic/arrow-spacing': 'error',
     '@stylistic/block-spacing': 'error',
     '@stylistic/brace-style': 'error',
-    '@stylistic/comma-dangle': ['error', 'never'],
+    '@stylistic/comma-dangle': 'error',
     '@stylistic/comma-spacing': 'error',
     '@stylistic/comma-style': 'error',
     '@stylistic/computed-property-spacing': 'error',
     '@stylistic/curly-newline': ['error', 'always'],
     '@stylistic/dot-location': ['error', 'property'],
     '@stylistic/eol-last': 'error',
-    '@stylistic/func-call-spacing': 'off',
     '@stylistic/function-call-argument-newline': ['error', 'consistent'],
     '@stylistic/function-call-spacing': 'error',
     '@stylistic/function-paren-newline': ['error', 'multiline-arguments'],
     '@stylistic/generator-star-spacing': ['error', 'after'],
     '@stylistic/implicit-arrow-linebreak': 'error',
-    '@stylistic/indent': ['error', 2, { offsetTernaryExpressions: true, SwitchCase: 1 }],
+    '@stylistic/indent': ['error', 2],
     '@stylistic/indent-binary-ops': ['error', 2],
     '@stylistic/key-spacing': 'error',
     '@stylistic/keyword-spacing': 'error',
@@ -33,19 +37,23 @@ const base = {
     '@stylistic/linebreak-style': 'error',
     '@stylistic/lines-around-comment': 'off',
     '@stylistic/lines-between-class-members': 'error',
-    '@stylistic/max-len': [
-      'error',
-      100,
-      2,
-      {
-        ignoreRegExpLiterals: true,
-        ignoreStrings: true,
-        ignoreTemplateLiterals: true,
-        ignoreUrls: true
-      }
-    ],
+    '@stylistic/max-len': ['error', 120, 2, {
+      ignoreRegExpLiterals: true,
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true,
+      ignoreUrls: true
+    }],
     '@stylistic/max-statements-per-line': 'error',
-    '@stylistic/member-delimiter-style': 'off',
+    '@stylistic/member-delimiter-style': ['error', {
+      multiline: {
+        delimiter: 'none',
+        requireLast: false
+      },
+      singleline: {
+        delimiter: 'semi',
+        requireLast: false
+      }
+    }],
     '@stylistic/multiline-comment-style': 'off',
     '@stylistic/multiline-ternary': ['error', 'always-multiline', { ignoreJSX: true }],
     '@stylistic/new-parens': 'error',
@@ -97,64 +105,4 @@ const base = {
     '@stylistic/wrap-regex': 'off',
     '@stylistic/yield-star-spacing': 'error'
   }
-}
-
-const jsx = {
-  rules: {
-    '@stylistic/jsx-child-element-spacing': 'error',
-    '@stylistic/jsx-closing-bracket-location': ['error', 'line-aligned'],
-    '@stylistic/jsx-closing-tag-location': 'error',
-    '@stylistic/jsx-curly-brace-presence': ['error', {
-      children: 'never',
-      propElementValues: 'always',
-      props: 'never'
-    }],
-    '@stylistic/jsx-curly-newline': ['error', 'never'],
-    '@stylistic/jsx-curly-spacing': ['error', { allowMultiline: false, children: true }],
-    '@stylistic/jsx-equals-spacing': 'error',
-    '@stylistic/jsx-first-prop-new-line': 'error',
-    '@stylistic/jsx-function-call-newline': 'error',
-    '@stylistic/jsx-indent': 'off',
-    '@stylistic/jsx-indent-props': 'off',
-    '@stylistic/jsx-max-props-per-line': ['error', { when: 'multiline' }],
-    '@stylistic/jsx-newline': ['error', { prevent: true }],
-    '@stylistic/jsx-one-expression-per-line': ['error', { allow: 'single-line' }],
-    '@stylistic/jsx-pascal-case': 'error',
-    '@stylistic/jsx-props-no-multi-spaces': 'error',
-    '@stylistic/jsx-quotes': 'error',
-    '@stylistic/jsx-self-closing-comp': 'error',
-    '@stylistic/jsx-sort-props': 'off',
-    '@stylistic/jsx-tag-spacing': ['error', { beforeClosing: 'never' }],
-    '@stylistic/jsx-wrap-multilines': ['error', {
-      arrow: 'parens-new-line',
-      assignment: 'parens-new-line',
-      condition: 'parens-new-line',
-      declaration: 'parens-new-line',
-      logical: 'parens-new-line',
-      prop: 'parens-new-line',
-      propertyValue: 'parens-new-line',
-      return: 'parens-new-line'
-    }]
-  }
-}
-
-const typescript = {
-  rules: {
-    '@stylistic/member-delimiter-style': ['error', {
-      multiline: {
-        delimiter: 'none',
-        requireLast: false
-      },
-      singleline: {
-        delimiter: 'semi',
-        requireLast: false
-      }
-    }]
-  }
-}
-
-export default {
-  base,
-  jsx,
-  typescript
-}
+})

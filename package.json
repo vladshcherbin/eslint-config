@@ -6,32 +6,18 @@
   "repository": "vladshcherbin/eslint-config",
   "main": "src/index.js",
   "dependencies": {
-    "@next/eslint-plugin-next": "^15.3.1",
+    "@eslint/js": "^9.27.0",
     "@stylistic/eslint-plugin": "^4.2.0",
-    "confusing-browser-globals": "^1.0.11",
-    "eslint-import-resolver-oxc": "^0.13.2",
-    "eslint-plugin-import-x": "^4.10.6",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-perfectionist": "^4.12.1",
-    "eslint-plugin-react-dom": "^1.48.4",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-hooks-extra": "^1.48.4",
-    "eslint-plugin-react-naming-convention": "^1.48.4",
-    "eslint-plugin-react-web-api": "^1.48.4",
-    "eslint-plugin-react-x": "^1.48.4",
-    "globals": "^16.0.0",
-    "typescript-eslint": "^8.31.0"
+    "eslint-import-resolver-typescript": "^4.3.4",
+    "eslint-plugin-import-x": "^4.11.1",
+    "eslint-plugin-perfectionist": "^4.13.0",
+    "typescript-eslint": "^8.32.1"
   },
   "devDependencies": {
-    "eslint": "^9.25.1"
+    "eslint": "^9.27.0"
   },
   "peerDependencies": {
-    "eslint": ">= 9.15.0"
-  },
-  "pnpm": {
-    "overrides": {
-      "unrs-resolver": "1.5.0"
-    }
+    "eslint": "^9.26.0"
   },
   "files": [
     "src"

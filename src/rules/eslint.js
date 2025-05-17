@@ -1,4 +1,10 @@
-export default {
+import js from '@eslint/js'
+import { defineConfig } from 'eslint/config'
+
+export default defineConfig({
+  extends: [
+    js.configs.recommended
+  ],
   rules: {
     'accessor-pairs': 'off',
     'array-callback-return': ['error', { allowImplicit: true, checkForEach: true }],
@@ -229,4 +235,4 @@ export default {
     'vars-on-top': 'error',
     'yoda': 'error'
   }
-}
+})

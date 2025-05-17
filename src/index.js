@@ -1,15 +1,21 @@
-import browser from './configs/browser.js'
-import nextTypescript from './configs/next-typescript.js'
-import next from './configs/next.js'
-import nodeTypescript from './configs/node-typescript.js'
-import node from './configs/node.js'
-import react from './configs/react.js'
+import tseslint from 'typescript-eslint'
+import eslint from './rules/eslint.js'
+import ignores from './rules/ignores.js'
+import importX from './rules/import-x.js'
+import perfectionist from './rules/perfectionist.js'
+import stylistic from './rules/stylistic.js'
+import typescript from './rules/typescript.js'
 
-export default {
-  browser,
-  next,
-  nextTypescript,
-  node,
-  nodeTypescript,
-  react
-}
+export default tseslint.config([
+  ignores,
+  {
+    extends: [
+      eslint,
+      typescript,
+      importX,
+      stylistic,
+      perfectionist
+    ],
+    files: ['**/*.js', '**/*.ts']
+  }
+])

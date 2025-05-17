@@ -1,3 +1,13 @@
-import configs from './src/index.js'
+import { defineConfig } from 'eslint/config'
+import config from './src/index.js'
 
-export default configs.node
+export default defineConfig({
+  extends: [
+    config
+  ],
+  languageOptions: {
+    parserOptions: {
+      projectService: true
+    }
+  }
+})
