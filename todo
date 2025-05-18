@@ -1,0 +1,12 @@
+find if no-new-symbol is in recommended
+same no-return-await
+
+- consider promise-function-async
+- consider no-unsafe-type-assertion
+
+- test '@stylistic/function-paren-newline': ['error', 'multiline']
+
+- check
+'@stylistic/lines-around-comment': 'off',
+'@stylistic/multiline-comment-style': 'off',
+no-confusing-arrow - onlyOneSimpleParam
