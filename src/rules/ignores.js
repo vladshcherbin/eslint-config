@@ -1,6 +1,5 @@
-import { globalIgnores } from 'eslint/config'
+import { includeIgnoreFile } from '@eslint/compat'
+import { join } from 'node:path'
+import { cwd } from 'node:process'
 
-export default globalIgnores([
-  'build',
-  'dist'
-])
+export default includeIgnoreFile(join(cwd(), '.gitignore'))
