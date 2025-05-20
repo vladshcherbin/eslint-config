@@ -2,13 +2,9 @@ import stylistic from '@stylistic/eslint-plugin'
 import { defineConfig } from 'eslint/config'
 
 export default defineConfig({
-  extends: [
-    // eslint-disable-next-line import-x/no-named-as-default-member
-    stylistic.configs.customize({
-      commaDangle: 'never',
-      jsx: false
-    })
-  ],
+  plugins: {
+    '@stylistic': stylistic
+  },
   rules: {
     '@stylistic/array-bracket-newline': ['error', 'consistent'],
     '@stylistic/array-bracket-spacing': 'error',
@@ -29,7 +25,7 @@ export default defineConfig({
     '@stylistic/function-paren-newline': ['error', 'multiline-arguments'],
     '@stylistic/generator-star-spacing': ['error', 'after'],
     '@stylistic/implicit-arrow-linebreak': 'error',
-    '@stylistic/indent': ['error', 2],
+    '@stylistic/indent': ['error', 2, { offsetTernaryExpressions: true }],
     '@stylistic/indent-binary-ops': ['error', 2],
     '@stylistic/key-spacing': 'error',
     '@stylistic/keyword-spacing': 'error',
