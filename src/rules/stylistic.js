@@ -25,7 +25,7 @@ export default defineConfig({
     '@stylistic/function-paren-newline': ['error', 'multiline-arguments'],
     '@stylistic/generator-star-spacing': ['error', 'after'],
     '@stylistic/implicit-arrow-linebreak': 'error',
-    '@stylistic/indent': ['error', 2, { offsetTernaryExpressions: true }],
+    '@stylistic/indent': ['error', 2, { offsetTernaryExpressions: true, SwitchCase: 1 }],
     '@stylistic/indent-binary-ops': ['error', 2],
     '@stylistic/key-spacing': 'error',
     '@stylistic/keyword-spacing': 'error',
