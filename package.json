@@ -9,17 +9,17 @@
     "lint": "eslint src"
   },
   "dependencies": {
-    "@eslint/compat": "^1.2.9",
-    "@eslint/js": "^9.27.0",
-    "@stylistic/eslint-plugin": "^4.2.0",
-    "eslint-import-resolver-typescript": "^4.3.4",
-    "eslint-plugin-import-x": "^4.11.1",
-    "eslint-plugin-perfectionist": "^4.13.0",
-    "typescript-eslint": "^8.32.1"
+    "@eslint/compat": "^2.0.0",
+    "@eslint/js": "^9.39.1",
+    "@stylistic/eslint-plugin": "^5.6.1",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-import-x": "^4.16.1",
+    "eslint-plugin-perfectionist": "^4.15.1",
+    "typescript-eslint": "^8.48.1"
   },
   "devDependencies": {
-    "@types/node": "^22.15.18",
-    "eslint": "^9.27.0"
+    "@types/node": "^24.10.1",
+    "eslint": "^9.39.1"
   },
   "peerDependencies": {
     "eslint": "^9.26.0"
