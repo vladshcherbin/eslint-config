@@ -1,5 +1,4 @@
 import { includeIgnoreFile } from '@eslint/compat'
-import { join } from 'node:path'
-import { cwd } from 'node:process'
+import { findUp } from 'find-up-simple'
 
-export default includeIgnoreFile(join(cwd(), '.gitignore'))
+export default includeIgnoreFile(await findUp('.gitignore'))
